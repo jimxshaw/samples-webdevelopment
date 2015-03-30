@@ -5,7 +5,7 @@
 
 body {
   font-family: arial, helvetica, sans-serif;
-  background: #000;
+  background: #cc0101;
 }
 
 #topbar {
@@ -21,7 +21,7 @@ body {
 }
 
 #logodiv {
-  padding-top: 7px;
+  padding-top: 8.25px;
   float: left;
   border-right: 1px solid #ccc;
   padding-right: 10px;
@@ -29,7 +29,7 @@ body {
 
 #signindiv {
   font-weight: bold;
-  padding: 9px 80px 10px 20px;
+  padding: 9px 80px 11px 20px;
   float: left;
   font-size: .75em;
   border-right: 1px solid #ccc;
@@ -40,7 +40,43 @@ body {
   top: 2px;
 }
 
+#topmenudiv {
+  float: left;
+}
 
+#topmenudiv ul {
+
+}
+
+#topmenudiv li {
+  padding: 11.5px 20px 11.5px 20px;
+  list-style: none;
+  font-weight: bold;
+  font-size: .75em;
+  height: 100%;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  float: left;
+}
+
+#searchdiv {
+  float: left;
+  padding: 6px 0 0 10px;
+}
+
+#searchdiv input {
+  height: 20px;
+  padding-left: 5px;
+  background: #e4e4e4;
+  background-image: url("../img/magnify.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  border: solid #e4e4e4;
+}
+
+#searchdiv input[placeholder="Search"] {
+  font-weight: bold;
+}
 
 
 
