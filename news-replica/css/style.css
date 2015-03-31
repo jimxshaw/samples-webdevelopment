@@ -5,7 +5,6 @@
 
 body {
   font-family: arial, helvetica, sans-serif;
-  background: #cc0101;
 }
 
 #topbar {
@@ -77,6 +76,99 @@ body {
 #searchdiv input[placeholder="Search"] {
   font-weight: bold;
 }
+
+.break {
+  clear: both;
+}
+
+#newsbar {
+  background: #cc0101;
+  width: 100%;
+  height: 100px;
+  color: #000;
+  border-bottom: 1px solid #fff;
+}
+
+#newsbar p {
+  color: #fff;
+  padding-top: 12px;
+}
+
+hr {
+  margin-bottom: 4px;
+  border: 1px solid #da4c4c;
+}
+
+#newsheader {
+  font-size: 2em;
+  padding-bottom: 8px;
+}
+
+#topicmenu li {
+  color: #fff;
+  float: left;
+  list-style: none;
+  font-size: .75em;
+  padding: 4px 10px 0 10px;
+  text-align: center;
+  border-right: 1px solid #da4c4c;
+}
+
+.selected {
+  border-bottom: 4px solid #fff;
+  height: -15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
