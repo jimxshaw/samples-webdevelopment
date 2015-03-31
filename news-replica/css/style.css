@@ -94,7 +94,7 @@ body {
   padding-top: 12px;
 }
 
-hr {
+#firstline {
   margin-bottom: 4px;
   border: 1px solid #da4c4c;
 }
@@ -126,12 +126,13 @@ hr {
 
 #technology {
   border-bottom: 3px solid #cc0101;
-  padding-top: 5px;
+  padding-bottom: 1px;
+  padding-top: 6px;
   width: 106px;
 }
 
 h1 {
-  color: #404040;
+  color: #333333;
   font-size: 1.75em;
   padding-top: 18px;
   padding-bottom: 14px;
@@ -146,8 +147,63 @@ h1 {
   font-size: .8em;
   text-align: justify;
   position: relative;
+  color: #5a5a5a;
 }
 
+#paragraph {
+  padding-bottom: 8px;
+}
+
+.newsitem p {
+  padding-bottom: 6px;
+}
+
+.newsitem a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.newsitem a:hover {
+  text-decoration: underline;
+}
+
+#fiveminutes {
+  color: #5a5a5a;
+  font-size: .8em;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #cc0101;
+}
+
+#firstlink {
+  padding-top: 15px;
+}
+
+#whitespace {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#secondline {
+  border: 1px solid #ededed;
+}
+
+#footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #4c4c4c;
+  color: #fff;
+  font-size: .8em;
+}
+
+#footer a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
 
 
 
