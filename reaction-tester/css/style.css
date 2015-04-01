@@ -3,11 +3,30 @@
   padding: 0;
 }
 
+#instructionsDiv {
+  text-align: center;
+  font-family: 'Verdana', sans-serif;
+  margin: 10px 0;
+}
+
+#instructionsDiv p {
+  margin: 10px 0;
+}
+
+#instructions {
+  font-style: italic;
+}
+
 #box {
   height: 100px;
   width: 100px;
   background: #cc0101;
   display: none;
+  position: relative;
+}
+
+#time {
+  font-weight: bold;
 }
 
 
