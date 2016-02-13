@@ -1,0 +1,4 @@
+{
+	"sourceMaps": true,
+	"plugins": ["transform-es2015-block-scoping","transform-es2015-template-literals"]
+}
