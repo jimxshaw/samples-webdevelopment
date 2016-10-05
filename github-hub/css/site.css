@@ -1,0 +1,16 @@
+/* site.css */
+header, 
+footer {
+    background: lightgray;
+    border: 1px solid black;
+}
+
+footer {
+    padding: 10px;
+    border-radius: 3px;
+}
+
+body {
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
