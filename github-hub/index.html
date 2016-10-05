@@ -7,43 +7,46 @@
         <![endif]-->
         <link rel="stylesheet" type="text/css" href="css/site.css" />
     </head>
-    <body>
-        <header>
-            <div><img src="img/logo.gif" class="bordered-image" /></div>
-            <div>This is a site to search <a href="https://github.com">GitHub</a> for interesting projects.</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <section id="main">
-            <p>In sodales fringilla urna, <em>vitae efficitur tortor porta eget</em>. Nullam ac ex vitae augue placerat tristique. Sed consequat elementum ligula non finibus. Nullam lacinia, orci sed ultricies venenatis, dui urna posuere risus, in ultrices quam neque eget leo. Aliquam erat volutpat. <strong>Proin ut auctor libero</strong>. Sed eu <span>purus ut erat lacinia</span> porttitor. Vestibulum finibus consectetur mauris ac congue.</p>
-            <form action="http://wilder.azurewebsites.net/echo" method="POST" class="bordered-image simple-form">
-                <label for="searchPhrase">Search Phrase: </label>
-                <input type="text" name="searchPhrase" id="searchPhrase" /><br/>
-                <input type="checkbox" name="useStars" id="useStars" checked="true" />
-                <label for="useStars">Use Stars?</label><br/>
-                <label for="languageChoice">Language: </label>
-                <select name="languageChoice" id="languageChoice" >
-                    <option selected>All</option>
-                    <option>C#</option>
-                    <option>Java</option>
-                    <option>JavaScript</option>
-                    <option>Swift</option>
-                    <option>Python</option>
-                    <option>Ruby</option>
-                </select>
-                <br/>
-                <input type="submit" value="Search" />
-            </form>
-        </section>
+    <div class="container">
+        <body>
+            <header>
+                <div><img src="img/logo.gif" class="bordered-image" /></div>
+                <div>This is a site to search <a href="https://github.com">GitHub</a> for interesting projects.</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-        <footer>
-            &copy; 2016 Jimmy Shaw LLC
-        </footer>
-    </body>
+            <section id="main">
+                <p>In sodales fringilla urna, <em>vitae efficitur tortor porta eget</em>. Nullam ac ex vitae augue placerat tristique. Sed consequat elementum ligula non finibus. Nullam lacinia, orci sed ultricies venenatis, dui urna posuere risus, in ultrices quam neque eget leo. Aliquam erat volutpat. <strong>Proin ut auctor libero</strong>. Sed eu <span>purus ut erat lacinia</span> porttitor. Vestibulum finibus consectetur mauris ac congue.</p>
+                <form action="http://wilder.azurewebsites.net/echo" method="POST" class="bordered-image simple-form">
+                    <label for="searchPhrase">Search Phrase: </label>
+                    <input type="text" name="searchPhrase" id="searchPhrase" /><br/>
+                    <input type="checkbox" name="useStars" id="useStars" checked="true" />
+                    <label for="useStars">Use Stars?</label><br/>
+                    <label for="languageChoice">Language: </label>
+                    <select name="languageChoice" id="languageChoice" >
+                        <option selected>All</option>
+                        <option>C#</option>
+                        <option>Java</option>
+                        <option>JavaScript</option>
+                        <option>Swift</option>
+                        <option>Python</option>
+                        <option>Ruby</option>
+                    </select>
+                    <br/>
+                    <input type="submit" value="Search" />
+                </form>
+            </section>
+
+            <footer>
+                &copy; 2016 Jimmy Shaw LLC
+            </footer>
+        </body>
+    </div>
 </html>

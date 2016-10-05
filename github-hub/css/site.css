@@ -13,6 +13,13 @@ footer {
 body {
     font-family: Segoe UI, Arial, Helvetica, sans-serif;
     font-size: 14px;
+    background: darkgreen;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
 }
 
 .bordered-image {
@@ -30,6 +37,7 @@ body {
 
 .simple-form {
     padding: 2px;
+    width: 300px;
 }
 
 .simple-form label {
@@ -49,4 +57,11 @@ body {
     padding: 3px;
     color: white;
     margin: 5px 0;
+}
+
+.container {
+    width: 989px;
+    margin: 0 auto;
+    background: white;
+    padding: 5px;
 }
