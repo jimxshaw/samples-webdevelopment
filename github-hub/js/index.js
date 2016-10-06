@@ -3,21 +3,6 @@
 $(document).ready(function () {
     "use strict";
 
-    var gitHubSearch = "https://api.github.com/search/repositories?q=jquery+language:javascript&sort=stars";
-
-    $.ajax({
-        type: "GET",
-        url: gitHubSearch,
-        success: function (result) {
-            displayResults(result.items);
-        },
-        error: function (err) {
-            console.log("Failed to query GitHub: ");
-        }
-    }).done(function () {
-        console.log("GET request is done!");
-    });
-
     var resultList = $("#resultList");
 
     resultList.text("This is from jQuery");
@@ -34,6 +19,46 @@ $(document).ready(function () {
             toggleButton.text("Hide");
         }
     });
+
+    $("#gitHubSearchForm").on("submit", function () {
+
+        var searchPhrase = $("#searchPhrase").val();
+        var useStars = $("#useStars").val();
+        var languageChoice = $("#languageChoice").val();
+
+        if (searchPhrase) {
+            resultList.text("Performing search...");
+
+            var gitHubSearchUrl = "https://api.github.com/search/repositories?q=" + encodeURIComponent(searchPhrase);
+
+            if (languageChoice != "All") {
+                gitHubSearchUrl += "+language:" + encodeURIComponent(languageChoice);
+            }
+
+            if (useStars) {
+                gitHubSearchUrl += "&sort=stars";
+            }
+
+            $.ajax({
+                type: "GET",
+                url: gitHubSearchUrl,
+                success: function (result) {
+                    displayResults(result.items);
+                },
+                error: function (err) {
+                    console.log("Failed to query GitHub: ");
+                }
+            }).done(function () {
+                console.log("GET request is done!");
+            });
+        }
+
+        // Returning false cancels out the default form handler so that we, the developer, 
+        // can handle the form action ourselves.
+        return false;
+    });
+
+
 
     function displayResults(results) {
         resultList.empty();
