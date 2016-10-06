@@ -5,8 +5,17 @@ $(document).ready(function () {
 
     var gitHubSearch = "https://api.github.com/search/repositories?q=jquery+language:javascript&sort=stars";
 
-    $.get(gitHubSearch, function (result) {
-        displayResults(result.items);
+    $.ajax({
+        type: "GET",
+        url: gitHubSearch,
+        success: function (result) {
+            displayResults(result.items);
+        },
+        error: function (err) {
+            console.log("Failed to query GitHub: ");
+        }
+    }).done(function () {
+        console.log("GET request is done!");
     });
 
     var resultList = $("#resultList");
