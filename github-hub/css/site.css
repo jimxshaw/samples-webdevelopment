@@ -35,9 +35,18 @@ body {
     padding: 5px;
 }
 
+#results {
+    padding: 2px;
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+}
+
 .simple-form {
     padding: 2px;
     width: 300px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .simple-form label {
